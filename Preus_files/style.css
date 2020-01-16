@@ -2526,7 +2526,7 @@ body.has-loading-screen.loading-done #brand-navigation {
 }
 
 #main-navigation .nav-link[data-toggle="collapse"]:before {
-    content: "\025BE";
+    /* content: "\025BE"; */
     position: absolute;
     right: 0;
     font-size: .875rem;
