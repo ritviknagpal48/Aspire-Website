@@ -18,8 +18,11 @@
 	<title>ASPIRE 2020</title>
 
 </head>
-<body class="has-loading-screen loading-done" cz-shortcut-listen="true">
 
+<body class="has-loading-screen loading-done" cz-shortcut-listen="true">
+    <div id="preloader">
+        <div id="status">&nbsp;</div>
+      </div>
 <div class="ts-page-wrapper">
     <!--Brand Navigation
     ====================================================================================================================
@@ -534,7 +537,14 @@ New Delhi - 110078
 
 </div>
     <script src="./Preus_files/myscroll.js"></script>
-	<script src="./Preus_files/jquery-3.3.1.min.js"></script>
+    <script src="./Preus_files/jquery-3.3.1.min.js"></script>
+    <script>
+        $(window).on('load', function() { // makes sure the whole site is loaded 
+            $('#status').fadeOut(); // will first fade out the loading animation 
+            $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+            $('body').delay(350).css({'overflow':'visible'});
+          })
+    </script>
 	<script src="./Preus_files/popper.min.js"></script>
 	<script src="./Preus_files/bootstrap.min.js"></script>
     <script src="./Preus_files/imagesloaded.pkgd.min.js"></script>
