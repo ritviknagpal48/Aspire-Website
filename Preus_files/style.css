@@ -2149,7 +2149,7 @@ form label, .ts-form label {
 }
 
 .ts-gallery__item.ts-floated-description .ts-background {
-    opacity: .6;
+    opacity: 1;
 }
 
 .ts-gallery__item:hover .ts-background {
